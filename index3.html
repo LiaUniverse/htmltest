@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>test</title>
+        <meta charset="utf-8"/>
+        <script src="../jquery-1.11.3.js" type="text/javascript"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <a href="#" class="abc">ㅇㅇ </a>동해<p class="bc">물</p>물<br/><br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>동해<br/>물<br/>에는<br/>박일도<br/>가<br/>있다<br/>
+        <script>
+            
+			/*
+			$(document).on('scroll',function(){
+				console.log($(document).height() - $(window).height() - $(document).scrollTop())
+			});
+			*/
+			/*		
+			$(document).on('scroll',function(){
+				console.log(
+					$(document).height() - $(window).height() - $(document).scrollTop()
+				)
+			})
+            
+            */
+			
+			$('a').on('mouseover',function(){
+				$('a').attr('src',$('a').attr('src').replace('url','url2'))
+			});
+			
+			$('a').css({
+				'margin':'100px',
+				'background-color':'red',
+				'text-align':'center'
+                
+			});
+			
+			$('b').css('position','block');
+			
+			console.log($(document).height())
+			console.log($(windiw).height())
+			
+			$(document).on('scroll',function(){
+				console.log($(document).scrollTop())
+			})
+			
+			$(document).on('scroll',function(){
+				console.log(
+					$(document).height() - $(window).height() - $(document).scrollTop()
+				)
+			})
+			
+			
+			
+			
+			$('.abc').on('click',function(){
+				if($('.bc').text() == '물'){
+					$('.bc').text('불')
+				} else {
+					$('.bc').text('물물')
+				}
+			});
+			
+			
+        </script>
+
+    </body>
+</html>
+
+
+

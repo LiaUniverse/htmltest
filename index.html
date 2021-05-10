@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>test</title>
+        <meta charset="utf-8"/>
+        <script src="../jquery-1.11.3.js" type="text/javascript"></script>
+        <style type="text/css">
+            *{margin:0; padding:0; overflow: hidden;}
+            .box {width: 50px; height:50px; background: black; border-radius: 50%;}
+            
+            .btn{width:150px; height:50px; text-align:center; background-color:red; line-height: 50px; color: white;}
+            .menu {width: 200px; height: 100vh; background-color: black; position: absolute; right:-200px; top:0px;}
+            p {color: white; font-size: 20px; margin: 20px;}
+            
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+            <div class="btn">열기</div>
+            <div class="menu"><p>메뉴</p></div>
+            <div class="box"></div>
+        </div>
+        <script>
+            //햄버거
+     
+            
+            
+            
+           /* 
+           $('.btn').on('click',function(){
+               if($('.menu').animate('margin-right') == '200px'){
+                  $(this).attr('text',$(this).attr('text').replace('닫기','열기'))
+               }
+           })
+            */
+            
+             $('.btn').on('click',function(){
+               if($('.btn').text() == '열기'){
+                   $('.btn').text('닫기');
+                       $('.menu').animate({
+                        'margin-right':'200px'
+                   },'slow')
+               } else {
+                   $('.btn').text('열기');
+                       $('.menu').animate({
+                       'margin-right':'0px'
+                   },'slow')
+               }
+            });
+            
+          
+            
+            
+            //육각형
+            $('.box').animate({
+               'margin':'0 0 0 200px'
+            },500,function(){
+                $('.box').animate({
+                    'margin':'100px 0 0 300px'
+                },500,function(){
+                    $('.box').animate({
+                        'margin':'200px 0 0 200px'
+                    },500,function(){
+                        $('.box').animate({
+                            'margin':'200px 0 0 100px'
+                        },500,function(){
+                            $('.box').animate({
+                                'margin':'100px 0 0 0px'
+                            },500,function(){
+                                $('.box').animate({
+                                    'margin':'0 0 0 100px'
+                                },500)
+                            });
+                        });
+                    });
+                });
+            });
+            
+            
+            
+        </script>
+
+    </body>
+</html>
+
+
+
